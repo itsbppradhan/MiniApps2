@@ -5,7 +5,7 @@ import subprocess
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
 # List of Python files to convert
-python_files = [f"APP25.py"]
+python_files = [f"APP{i}.py" for i in range(1, 26)]
 
 # Create a 'dist' folder if it doesn't exist
 dist_folder = os.path.join(current_directory, "dist")
